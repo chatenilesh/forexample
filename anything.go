@@ -1,26 +1,11 @@
-package main;
+package main
 
-import "fmt";
+import "fmt"
 
 func main() {
-	fmt.Println("Hi");
-	foo();
-	fmt.Println("After foo");
+	ret, err := fmt.Println("Hello World")
+	fmt.Println(ret, err)
 
-	for i:=0;i < 100; i++ {
-		if i%2 == 0 {
-			fmt.Print(i, " ");
-		}
-	}
-
-	bar();
-}
-
-func foo() {
-	fmt.Println("I am in foo");
-}
-
-
-func bar() {
-	fmt.Println("\nAnd then we exited")
+	ret1, _ := fmt.Println("Hello World")
+	fmt.Println(ret1)
 }
