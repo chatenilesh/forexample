@@ -11,10 +11,10 @@ func main() {
 	y = "James Bond"
 	z = true
 
-	s := fmt.Sprintf("%d %s %t" , x, y, z)
+	s := fmt.Sprintf("%d %s %t", x, y, z)
 	fmt.Println(s)
 
 	//x := fmt.Sprintf("%v %v %v" , x, y, z)
-	x := fmt.Sprintf("%#v %#v %#v" , x, y, z)
+	x := fmt.Sprintf("%#v %#v %#v", x, y, z)
 	fmt.Println(x)
 }
