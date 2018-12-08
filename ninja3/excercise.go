@@ -2,18 +2,18 @@ package main
 
 import "fmt"
 
-func main () {
+func main() {
 	//exercise 1
-	for i:=1; i<=10000; i++ {
+	for i := 1; i <= 10000; i++ {
 		fmt.Print(i, " ")
 	}
 
 	fmt.Println()
 
 	//exercise 2
-	for c:=int('A'); c<=int('Z'); c++ {
-		fmt.Println(c-int('A')+1)
-		for i:=0; i<3; i++ {
+	for c := int('A'); c <= int('Z'); c++ {
+		fmt.Println(c - int('A') + 1)
+		for i := 0; i < 3; i++ {
 			//fmt.Printf("\t%#U '%c'\n", byte(c), c)
 			fmt.Printf("\t%#U\n", byte(c))
 		}
@@ -31,7 +31,7 @@ func main () {
 	yr = 1990
 	for {
 		if yr > 2018 {
-			break;
+			break
 		}
 
 		fmt.Println(yr)
@@ -39,12 +39,12 @@ func main () {
 	}
 
 	//exercise 5
-	for i:=10; i<=100; i++ {
-		fmt.Println(i%4)
+	for i := 10; i <= 100; i++ {
+		fmt.Println(i % 4)
 	}
 
 	//exercise 6
-	if (true) {
+	if true {
 		fmt.Println("in if")
 	}
 
@@ -60,8 +60,10 @@ func main () {
 
 	//exercise 8
 	switch {
-		case 1<1: fmt.Println("1<1")
-		case 1==3: fmt.Println("1==3")
+	case 1 < 1:
+		fmt.Println("1<1")
+	case 1 == 3:
+		fmt.Println("1==3")
 	default:
 		fmt.Println("default")
 	}
@@ -69,8 +71,10 @@ func main () {
 	//exercise 9
 	s := "favSport"
 	switch s {
-	case "running": fmt.Println("running")
-	case "favSport": fmt.Println("favSport")
+	case "running":
+		fmt.Println("running")
+	case "favSport":
+		fmt.Println("favSport")
 	default:
 		fmt.Println("default")
 	}
@@ -81,6 +85,5 @@ func main () {
 	fmt.Println(true || true)
 	fmt.Println(true || false)
 	fmt.Println(!true)
-
 
 }
